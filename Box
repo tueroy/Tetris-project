@@ -1,0 +1,35 @@
+package com.tetris;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.geom.Ellipse2D;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import javax.swing.*;
+import java.awt.*;
+
+
+public class Box extends JPanel {
+
+
+
+    public Box() {
+        this.setBounds(50,0,100,100);
+
+this.setBackground(Color.BLACK);
+this.setVisible(true);
+
+
+
+    }
+
+   protected void paintComponent(Graphics g){
+
+super.paintComponent(g);
+      g.fillRect(0,0,50,50);
+    }
+}
+
