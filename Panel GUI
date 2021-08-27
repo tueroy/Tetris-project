@@ -1,0 +1,26 @@
+package com.tetris;
+
+import javax.swing.*;
+
+public class Panel extends javax.swing.JFrame {
+    private JPanel panel1;
+
+    public Panel() {
+
+    this.add(new Box());
+}
+
+public static void main (String [] args) {
+    java.awt.EventQueue.invokeLater(new Runnable() {
+        @Override
+        public void run() {
+
+            new Panel().setVisible(true);
+        }
+    });
+
+
+}
+
+
+}
